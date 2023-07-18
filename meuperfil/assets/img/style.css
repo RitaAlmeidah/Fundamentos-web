@@ -1,0 +1,84 @@
+/* **Estilos da página meuperfilindex.html** */
+
+.center{
+    text-align: center;
+}
+
+
+/*Sobre*/
+.justify {
+    text-align: justify;
+}
+
+.container1 {
+    color: rgb(2, 2, 77);
+    font-size: 18px;
+    display: flex;
+    flex-flow:row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Vídeo*/
+.container2 {
+    color: rgb(2, 2, 77);
+    font-size: 18px;
+    display: flex;
+    flex-flow:row;
+    justify-content: center;
+    align-items: center;
+}
+
+.p-color{
+    color: purple;
+}
+
+
+#menu li {
+    display: inline;
+    padding: 16px;
+    text-decoration: none;
+}
+
+#menu li a {
+    text-decoration: none;
+    color:black;
+    font-size: 16px;
+}
+
+#menu li a:hover {
+    color:grey
+}
+
+.p-30 {
+    padding: 30px;
+}
+
+.br-50 {
+    border-radius: 50%;
+}
+
+.wh-300 {
+    width: 400px;
+    height: 400px;
+}
+
+.tm-social {
+    width: 40px;
+    height: 40px;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+/* **Estilos da página contato.html** */
+
+.p-50 {
+    padding: 50px;
+}
+
+.ml-50 {
+    margin-left: 50px;
+}
+
