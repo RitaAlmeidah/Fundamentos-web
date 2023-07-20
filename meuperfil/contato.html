@@ -1,75 +1,98 @@
 <!DOCTYPE html>
 <html lang="pt-br>
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato</title>
 
     <link rel="stylesheet" href="./css/style.css.css">
+    <link rel="stylesheet" href="./css/global.css">
 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <title>Meu Perfil</title>
 </head>
-<body>
-    <ul id="menu">
-        <li>
-            <a href="./meuperfilindex.html">Home</a>
-        </li>
-        <li>
-            <a href="./contato.html">Contato</a>
-        </li>
-    </ul>
-    <h1 class="center">Entre em contato comigo!</h1>
 
-    <div class="container2 mb-50">
+<body>
+    <header class="header_container flex">
+        <div class="header_content">
+
+            <div class="flex">
+                <nav id="menu">
+                    <ul id="menu_list flex">
+                        <li class="btn"><a href="./index.html">Home</a></li>
+                         <li class="btn"><a href="./contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+                <div class="tema">
+                    <label class="switch">claro/escuro
+                        <input type="checkbox" checked onclick="changeTheme()">
+                        <span class="slider round"></span>
+                    </label>
+                </div>   
+            </div>
+        </div>
+    </header>
+    
+    <div class="container p-30">
+        <h1 class="center p-color">Entre em contato comigo!</h1> 
+    </div>
+    
+    <br>
+    <br>
+   
+    <div class="container2 ml-50">
         <div>
         <form>
-            <label for="nome">Nome:</label>  <br>
+            <label for="nome">Nome:</label> <br>
             <input type="text" id="nome" onkeyup="validaNome()">
             <div id="txtNome"></div>
-            <br>
 
             <label for="email">E-mail:</label>  <br>
             <input type="email" id="email" onkeyup="validaEmail()">
             <div id="txtEmail"></div>
-            <br>
 
-            <label for="assunto">Assunto:</label> <br>
+            <label for="assunto">Mensagem:</label> <br>
             <textarea name="assunto" id="assunto" cols="50" rows="5" onkeyup="validaAssunto()"></textarea>
             <div id="txtAssunto"></div>
-            <br>
-            <br>
-            <button onclick="enviar()">Enviar</button>
+ 
+       
+            <button class="btn" onclick="enviar()">Enviar</button>
         </form>
         </div>
 
         <div class="ml-50">
 
-        <h2>Endereço:</h2>
-        <p>Francisco Morato/SP</p>
-
+        <p>Endereço:</p>
+        <p>Francisco Morato/SP <img width="20" height="20" src="./assets/img/localizacao.gif.gif"></p>
+        
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58641.02839508405!2d-46.769208744586564!3d-23.277114122759553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cee6e07ae50819%3A0x96c402050d2dd76a!2sFrancisco%20Morato%2C%20SP!5e0!3m2!1spt-BR!2sbr!4v1689384190724!5m2!1spt-BR!2sbr" 
         width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" onmousemove="mapaZoom()" onmouseout="mapaNormal()" id="mapa"></iframe>
         </div>
     </div>
+    <br>
 
 
     <hr>
     <footer>
-
         <div class="container1">
-            <a href="https://github.com/RitaAlmeidah" target="_blank">
-            <img class="tm-social p-30" src="./assets/img/github.png" alt="Logo GitHub">
+            <a class="tm-social p-30" href="https://github.com/RitaAlmeidah" target="_blank">
+                <img class="tm-social" src="./assets/img/github2.png.png" alt="Logo GitHub">
             </a>
-            <a href="https://www.linkedin.com/in/ritaa-almeida/"target="_blank">
-            <img class="tm-social p-30" src="./assets/img/linkedin.png" alt="Logo Linkedin">
+            <a class="tm-social p-30" href="https://www.linkedin.com/in/ritaa-almeida/" target="_blank">
+                <img class="tm-social"src="./assets/img/linkedin2 (1).png" alt="Logo Linkedin">
             </a>
         </div>
+        <br>
 
         <p class="center">
             Todos os direitos reservados: Rita Almeida &copy
         </p>
     </footer>
-    <script src="./js/script.js"></script>
 
+    <script src="./js/script.js""></script>
  
 </body>
 </html>
