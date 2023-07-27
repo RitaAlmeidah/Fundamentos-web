@@ -9,6 +9,9 @@
 
     <link rel="stylesheet" href="./css/style.css.css">
     <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./scripts.js">
+
+    <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon">
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
@@ -19,20 +22,25 @@
     <header class="header_container flex">
         <div class="header_content">
 
-            <div class="flex">
-                <nav id="menu">
-                    <ul id="menu_list flex">
-                        <li class="btn"><a href="./index.html">Home</a></li>
-                         <li class="btn"><a href="./contato.html">Contato</a></li>
+            <div>
+                <nav class="menu">
+                    <ul class="menu_list flex">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./contato.html">Contato</a></li>
                     </ul>
                 </nav>
+            </div>
+
+            <div class="flex">
+                <h5>Tema</h5>
                 <div class="tema">
-                    <label class="switch">claro/escuro
+                    <label class="switch">
                         <input type="checkbox" checked onclick="changeTheme()">
                         <span class="slider round"></span>
                     </label>
-                </div>   
+                </div>
             </div>
+        </div>
         </div>
     </header>
     
@@ -76,23 +84,22 @@
 
 
     <hr>
-    <footer>
-        <div class="container1">
+    <footer class="header_container flex">
+        <p class="center">
             <a class="tm-social p-30" href="https://github.com/RitaAlmeidah" target="_blank">
                 <img class="tm-social" src="./assets/img/github2.png.png" alt="Logo GitHub">
             </a>
             <a class="tm-social p-30" href="https://www.linkedin.com/in/ritaa-almeida/" target="_blank">
-                <img class="tm-social"src="./assets/img/linkedin2 (1).png" alt="Logo Linkedin">
+                <img class="tm-social" src="./assets/img/linkedin2 (1).png" alt="Logo Linkedin">
             </a>
-        </div>
-        <br>
-
-        <p class="center">
+            <br>
             Todos os direitos reservados: Rita Almeida &copy
         </p>
+
     </footer>
 
-    <script src="./js/script.js""></script>
+    <script src="./js/script.js"></script>
+    
  
 </body>
 </html>
