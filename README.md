@@ -1,6 +1,6 @@
 # Fundamentos_web
 
-Meu Perfil pessoal
+Meu Perfil Pessoal
 * Utilizado HTML5, CSS3 e JavaScript
 
 
